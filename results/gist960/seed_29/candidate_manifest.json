@@ -1,0 +1,6 @@
+{
+  "sha256": "9de9a51e3480a5d61346905b6ebd2a1252f08ba1045a8b74733af56d3998f576",
+  "ID_encoding": "positions in sorted base_ids; not original IDs",
+  "M": 128,
+  "all_methods_share_this_file": true
+}

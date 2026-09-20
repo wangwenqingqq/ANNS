@@ -1,0 +1,98 @@
+protocol_id: hard_candidate_residual_v1
+status: proposed_not_executed
+metric: squared_l2
+k: 10
+quality:
+  candidate_recall_calibration: 0.9995
+  final_recall_min: 0.999
+  probe_added_false_prunes_allowed: 0
+inputs:
+  sift128:
+    base_path: null
+    query_path: null
+    source_sha256: null
+    dimension: 128
+    common_rank: 16
+  gist960:
+    base_path: null
+    query_path: null
+    source_sha256: null
+    dimension: 960
+    common_rank: 64
+splits:
+  seed: 20260920
+  diagnostic_base_n: 100000
+  conditional_system_base_n: 1000000
+  model_fit_base_n: 32768
+  query_train: 256
+  query_calibration: 256
+  query_test: 488
+  query_duplicates: group_before_split
+  base_duplicates: retain_distinct_ids
+model_seeds: [17, 29, 43]
+clusters: 16
+extra_ranks: [16, 32]
+front:
+  algorithm: official_rabitq_component
+  repository: https://github.com/VectorDB-NTU/RaBitQ-Library
+  commit: null
+  bits_per_dim: 1
+  score_all_vectors: true
+  hidden_raw_rerank: false
+  candidate_m_grid: [128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, N]
+  m_selection: smallest_calibration_feasible
+  freeze_before_test: true
+methods: [FULL, RQ_PLUS, GLOBAL_PCA, LOCAL_PCA, RANDOM_QUERY_PAIRS, HARD_QUERY_PAIRS]
+training:
+  max_hard_pairs_per_query: 256
+  sampling: fixed_hash_not_truth_labels
+  random_control: match_query_cluster_pair_counts
+  pair_normalization: unit_l2_nonzero
+  pair_weight: each_query_total_one
+  covariance_for_pairs: uncentered_second_moment
+  sparse_cluster_min_pairs_per_rank: 4
+  sparse_cluster_fallback: shared_global_basis_for_H_and_Q
+numerics:
+  input_dtype: float32
+  training_dtype: float64
+  main_serialized_sketch_dtype: float32
+  truth_dtype: float64
+  truth_query_block: 8
+  truth_database_block: 4096
+  truth_distance: direct_difference_squared_sum
+  sort_key: [squared_distance, stable_id]
+  prune_comparison: strictly_greater
+  guard_formula: 1e-6*(1+q_centered_norm_sq+x_centered_norm_sq)
+  guard_status: empirical_policy_not_certified_error_bound
+  uncertain_or_invalid: full_distance_fallback
+  full_false_prune_audit: true
+memory:
+  raw_database: common_resident_float32
+  extra_budget_bytes: 4*N*(r0+r+2)+4*D*r0+4*16*D*r+4*D
+  count_model_centers_factors_alignment: true
+  report_host_device_reserved_and_workspace: true
+system_gate:
+  enabled_only_after_A_GO: true
+  gpu_uuid: null
+  warm_start_candidates: 64
+  candidate_block: 128
+  primary_query_batch: 128
+  diagnostic_query_batch: 1
+  process_repetitions: 3
+  warmup_testset_passes: 5
+  timed_testset_passes: 20
+  include_front_transform_gather_refine_topk: true
+  oracle_access: forbidden
+  required_mature_controls: [native_multibit_rabitq, lorann_rrr_component]
+statistics:
+  paired_query_bootstrap_reps: 2000
+  seed_results: separate
+  replayed_queries_are_not_new_samples: true
+decision:
+  a_negative_refinement_reduction_min: 0.20
+  a_logical_bytes_reduction_min: 0.10
+  a_min_passing_seeds: 2
+  a_total_seeds: 3
+  b_full_query_time_reduction_min: 0.15
+  b_all_three_process_pairs_faster: true
+  thresholds_are_operational_not_theorems: true

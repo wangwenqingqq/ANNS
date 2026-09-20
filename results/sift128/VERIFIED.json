@@ -1,0 +1,54 @@
+{
+  "dataset": "sift128",
+  "verification": "PASS",
+  "recursive_artifact_hash_checks": 344,
+  "split_leakage": false,
+  "training_candidate_scope_checked": true,
+  "seed_gates": [
+    {
+      "seed": 17,
+      "complete_test_groups": 16,
+      "query_count_each": 488,
+      "all_test_added_false_prunes": 0,
+      "frozen_control_test_quality_pass": true,
+      "representation_payload_pass": true,
+      "diagnostic_reserved_lower_bound_pass": false,
+      "resource_gate_status": "FAIL_LOWER_BOUND_EXCEEDS_BUDGET",
+      "resource_gate_verified_positive": false,
+      "A_admitted": false,
+      "seed_decision": "NO_GO",
+      "negative_mechanism_gate_independent_of_resource_overhead": true
+    },
+    {
+      "seed": 29,
+      "complete_test_groups": 16,
+      "query_count_each": 488,
+      "all_test_added_false_prunes": 0,
+      "frozen_control_test_quality_pass": true,
+      "representation_payload_pass": true,
+      "diagnostic_reserved_lower_bound_pass": false,
+      "resource_gate_status": "FAIL_LOWER_BOUND_EXCEEDS_BUDGET",
+      "resource_gate_verified_positive": false,
+      "A_admitted": false,
+      "seed_decision": "NO_GO",
+      "negative_mechanism_gate_independent_of_resource_overhead": true
+    },
+    {
+      "seed": 43,
+      "complete_test_groups": 16,
+      "query_count_each": 488,
+      "all_test_added_false_prunes": 0,
+      "frozen_control_test_quality_pass": true,
+      "representation_payload_pass": true,
+      "diagnostic_reserved_lower_bound_pass": false,
+      "resource_gate_status": "FAIL_LOWER_BOUND_EXCEEDS_BUDGET",
+      "resource_gate_verified_positive": false,
+      "A_admitted": false,
+      "seed_decision": "NO_GO",
+      "negative_mechanism_gate_independent_of_resource_overhead": true
+    }
+  ],
+  "A": "NO_GO",
+  "resource_scope": "Native glibc usable bytes for owning NumPy model blocks plus page-rounded file-backed sketch map; allocator metadata and shared arena overhead excluded, so this is a conservative lower bound. The CPU diagnostic is not a packed GPU index.",
+  "B": "NOT_STARTED"
+}

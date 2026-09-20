@@ -1,0 +1,44 @@
+{
+  "stage": "prepared",
+  "dataset": "gist960",
+  "dimension": 960,
+  "source_base_shape": [
+    1000000,
+    960
+  ],
+  "source_query_shape": [
+    1000,
+    960
+  ],
+  "source_base_sha256": "fd57967ae1461c453336b9be9621c74a2b5927e74cafa9f5e899a5dc5df6a5b8",
+  "source_query_sha256": "220465f0ab851de6890d87ab1dd5081f526da8d214aa7a3849e738e63cad6775",
+  "selected_n": 100000,
+  "query_n": 1000,
+  "fit_n": 32768,
+  "seed": 20260920,
+  "base_duplicate_extra_ids": 257,
+  "query_group_count": 998,
+  "selected_query_group_count": 998,
+  "split_counts": [
+    256,
+    256,
+    488
+  ],
+  "artifacts": {
+    "split_ids.npz": "5b523e2192dc166a44e45e5d68d6edfd7d3985ddc233fee202156305d500c8b5",
+    "base.fbin": "06bdfb0f48c5318eee61782981824a4bdb588c27e573642459666b626a965711",
+    "queries.fbin": "bd7d49b299086a05da5261c5041a894e33f2d31fb0b9215eb67e98c8c1669f95"
+  },
+  "elapsed_seconds": 11.638118013972417,
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "machine": "x86_64",
+    "threads": {
+      "OMP_NUM_THREADS": "8",
+      "OPENBLAS_NUM_THREADS": "8",
+      "MKL_NUM_THREADS": "8"
+    },
+    "maxrss_native_units": 4565468
+  }
+}

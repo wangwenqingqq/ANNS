@@ -1,0 +1,39 @@
+{
+  "dataset": "sift128",
+  "A": "NO_GO",
+  "passing_seeds": 0,
+  "required_seeds": 2,
+  "B": "NOT_STARTED",
+  "summaries": [
+    {
+      "seed": 17,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.1636450276749386,
+      "logical_read_reduction": -0.006785679572318903,
+      "recall": 1.0,
+      "false_prunes": 0,
+      "rq_dominates": true
+    },
+    {
+      "seed": 29,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.16192563393540027,
+      "logical_read_reduction": -0.006691281454807463,
+      "recall": 0.9997950819672131,
+      "false_prunes": 0,
+      "rq_dominates": false
+    },
+    {
+      "seed": 43,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.1600170434092696,
+      "logical_read_reduction": -0.006619487059625895,
+      "recall": 0.9997950819672131,
+      "false_prunes": 0,
+      "rq_dominates": true
+    }
+  ]
+}

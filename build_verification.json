@@ -1,0 +1,35 @@
+{
+  "upstream_commit": "dd6aa230c49082bf4aad4a5a56f513d87a2084ef",
+  "local_git_clean": true,
+  "tracked_files": 550,
+  "tracked_tree_sha256": "f9a671c7e82098179c82b908aa885435803d9519e4e0c7a3e00074e88d9d378b",
+  "remote_export_matches_clean_git_tree": true,
+  "verification_scope": "Post-run clean-source verification and byte-identical adapter rebuild; not a contemporaneous build receipt",
+  "adapter_sha256": "afaf461bdf149ccf9a965b7f127df7a44b36c1abe9cc23b872276077c8942976",
+  "observed_binary_sha256": "e986a4fe6319d578a77229665751a31b9b1ecb0745fa0e897e1ab8ef1c2c69cc",
+  "rebuilt_binary_sha256": "e986a4fe6319d578a77229665751a31b9b1ecb0745fa0e897e1ab8ef1c2c69cc",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "cmake": "3.28.3",
+  "compile_command": "g++ -O3 -std=c++17 -fopenmp -Wall -Wextra -Ivendor/RaBitQ-Library/include front_score.cpp build-library/librabitq_core.a -o build-library/front_score",
+  "upstream_cmake_options": [
+    "CMAKE_BUILD_TYPE=Release",
+    "RABITQ_BUILD_SAMPLES=OFF",
+    "RABITQ_BUILD_TESTS=OFF",
+    "RABITQ_ENABLE_NATIVE_OPTIMIZATION=OFF"
+  ],
+  "CPU": "Intel Xeon Gold 6530",
+  "GPU_used": false,
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "model_threads": 8,
+  "python_source_at_final_verification_sha256": {
+    "check_front.py": "1e41fb3ca37c2f3390e091604a078c731eee1ee3ac1bde544e2dc00075404f50",
+    "check_probes.py": "3605b05262ef669f5e01b3cbead122aef0db89c7c047b94a05f76df42e65f36a",
+    "curate_results.py": "98c61e6a93799c5ffbdf25708f10797460f7cb5988f1f46bf4e27dd5c596c9e4",
+    "decide.py": "3d93eb59757ad73e98cd3a6b39623338a9e6d5c1b7eb1eb0ab9269bebac307f4",
+    "front_gate.py": "84228c883fd4d90c53678bd6fbfc1d6cbbdec9bf53a9724cb732f8f599e9fde1",
+    "prepare_truth.py": "e0fb16717f86ba71ff36cb145be82d970bd2e1b59a95ba75cce8e99bad6e72e8",
+    "probes.py": "7d7547c8e1511ae4291ac8dbae7283c5b485b3448daf320d0af1e8494321bb76",
+    "verify_results.py": "2846c4014756798983b9083ca58f43206cbc95dabe1078c93e88cdd9351cd4b5"
+  }
+}

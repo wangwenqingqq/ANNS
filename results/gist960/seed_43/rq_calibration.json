@@ -1,0 +1,163 @@
+{
+  "choices": {
+    "16": {
+      "bits": 2,
+      "M1": 32,
+      "recall_calibration": 0.999609375,
+      "extra_bytes": 12800000,
+      "logical_reads_per_query": 13853136
+    },
+    "32": {
+      "bits": 2,
+      "M1": 32,
+      "recall_calibration": 0.999609375,
+      "extra_bytes": 12800000,
+      "logical_reads_per_query": 13853136
+    }
+  },
+  "grid": [
+    {
+      "rank_budget": 16,
+      "bits": 2,
+      "M1": 10,
+      "recall": 0.846484375,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 2,
+      "M1": 32,
+      "recall": 0.999609375,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 2,
+      "M1": 64,
+      "recall": 1.0,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 2,
+      "M1": 128,
+      "recall": 1.0,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 3,
+      "M1": 10,
+      "recall": 0.9234375,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 3,
+      "M1": 32,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 3,
+      "M1": 64,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 16,
+      "bits": 3,
+      "M1": 128,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 2,
+      "M1": 10,
+      "recall": 0.846484375,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 2,
+      "M1": 32,
+      "recall": 0.999609375,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 2,
+      "M1": 64,
+      "recall": 1.0,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 2,
+      "M1": 128,
+      "recall": 1.0,
+      "extra_bytes": 12800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 3,
+      "M1": 10,
+      "recall": 0.9234375,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 3,
+      "M1": 32,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 3,
+      "M1": 64,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 3,
+      "M1": 128,
+      "recall": 1.0,
+      "extra_bytes": 24800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 4,
+      "M1": 10,
+      "recall": 0.952734375,
+      "extra_bytes": 36800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 4,
+      "M1": 32,
+      "recall": 1.0,
+      "extra_bytes": 36800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 4,
+      "M1": 64,
+      "recall": 1.0,
+      "extra_bytes": 36800000
+    },
+    {
+      "rank_budget": 32,
+      "bits": 4,
+      "M1": 128,
+      "recall": 1.0,
+      "extra_bytes": 36800000
+    }
+  ],
+  "test_used": false,
+  "rq_logical_work_model": "reuse F0 intermediate inner products; only selected C0 extra-bit scores; offline exporter scores all N for adapter validation; not a timing claim",
+  "shared_f0_intermediate_workspace_bytes": 400000
+}

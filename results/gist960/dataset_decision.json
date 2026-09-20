@@ -1,0 +1,39 @@
+{
+  "dataset": "gist960",
+  "A": "NO_GO",
+  "passing_seeds": 0,
+  "required_seeds": 2,
+  "B": "NOT_STARTED",
+  "summaries": [
+    {
+      "seed": 17,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.005177263037208224,
+      "logical_read_reduction": -0.0001536647343975961,
+      "recall": 0.9993852459016395,
+      "false_prunes": 0,
+      "rq_dominates": true
+    },
+    {
+      "seed": 29,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.005621598395875171,
+      "logical_read_reduction": -0.00016728306382418623,
+      "recall": 1.0,
+      "false_prunes": 0,
+      "rq_dominates": true
+    },
+    {
+      "seed": 43,
+      "rank": 16,
+      "control": "L",
+      "hard_negative_reduction": -0.005910271335183959,
+      "logical_read_reduction": -0.00017561130566012828,
+      "recall": 0.9991803278688525,
+      "false_prunes": 0,
+      "rq_dominates": false
+    }
+  ]
+}

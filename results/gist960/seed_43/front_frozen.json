@@ -1,0 +1,54 @@
+{
+  "M": 128,
+  "N": 100000,
+  "M_over_N": 0.00128,
+  "calibration_grid": [
+    {
+      "M": 128,
+      "recall": 1.0
+    },
+    {
+      "M": 256,
+      "recall": 1.0
+    },
+    {
+      "M": 512,
+      "recall": 1.0
+    },
+    {
+      "M": 1024,
+      "recall": 1.0
+    },
+    {
+      "M": 2048,
+      "recall": 1.0
+    },
+    {
+      "M": 4096,
+      "recall": 1.0
+    },
+    {
+      "M": 8192,
+      "recall": 1.0
+    },
+    {
+      "M": 16384,
+      "recall": 1.0
+    },
+    {
+      "M": 32768,
+      "recall": 1.0
+    },
+    {
+      "M": 65536,
+      "recall": 1.0
+    },
+    {
+      "M": 100000,
+      "recall": 1.0
+    }
+  ],
+  "score_sha256": "72d85951f307687f192328951a0fa9e60fe3632394cd6a75f20a7aa313b8673c",
+  "selection": "smallest_calibration_feasible",
+  "test_used_for_selection": false
+}

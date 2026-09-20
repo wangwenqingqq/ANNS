@@ -1,0 +1,13 @@
+{
+  "protocol_id": "hard_candidate_residual_v1",
+  "input_files": {
+    "PROTOCOL.md": "2bff76b48cbe56d5809266373ee5343cbc5366b5a25908cbb855a0566aaed618",
+    "config.yaml": "1de91953724b418e38e5883eafe2513d6d28a4db28fe14574a13c54b8c9c1d94"
+  },
+  "rabitq": {
+    "repository": "https://github.com/VectorDB-NTU/RaBitQ-Library.git",
+    "commit": "dd6aa230c49082bf4aad4a5a56f513d87a2084ef",
+    "license": "Apache-2.0",
+    "modified": false
+  }
+}

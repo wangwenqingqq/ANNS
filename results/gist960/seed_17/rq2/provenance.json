@@ -1,0 +1,14 @@
+{
+  "binary_sha256": "e986a4fe6319d578a77229665751a31b9b1ecb0745fa0e897e1ab8ef1c2c69cc",
+  "source_commit": "dd6aa230c49082bf4aad4a5a56f513d87a2084ef",
+  "artifacts": {
+    "metadata.json": "b742b1c50bc839bb6b65ab28d207fbd9296b6295417912cface812f771cc77b9",
+    "batch_centers.u32": "75268e3839c38f93fd9ad7f09b148f200164f84ec899705cacf02301be42f474",
+    "scores.fbin": "c77c1e36a266b5c4c9c84be01d051fb04b464352e5b74f5342b7ee65b944163f",
+    "batch_ids.u32": "2d3a47dfe231b20c669905aa615f3d375d398d7ff2bffbca15a529b2601b1f44",
+    "excodes.bin": "c540d8b31fff1b30a04ac8b3cdb9a1f790c9461f1c603a0a575e0027b452c53e",
+    "rotated_centers.f32": "4c3d536866f3fdd61347d36e8635c9307ba071fea6e89279565ae29575d0d32b",
+    "codes.bin": "9f6179342d11bd8e99145ef502be49ee49a53de5efc5c2f379fa49b0984cea5a",
+    "rotation.bin": "c27e804fb31a072fd508d79b4063b1d564e7c9cd85598da2e2c2765de43329f8"
+  }
+}

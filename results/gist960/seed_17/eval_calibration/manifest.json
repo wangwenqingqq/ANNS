@@ -1,0 +1,12 @@
+{
+  "stage": "oracle_radius_A",
+  "host_maxrss_native_units": 618016,
+  "device_used_bytes": 0,
+  "device_reserved_bytes": 0,
+  "reference_and_oracle_workspace_not_deployable": true,
+  "front_logical_read_bytes_per_query": 13709264,
+  "all_pruned_candidates_audited": true,
+  "per_query_sha256": "00bfc8bd5cbf266a741b3a3b714aba73fc67ecb8eb711c89fd82a68410b19084",
+  "model_manifest_sha256": "927d940b38249dd41179b7840bb343570761cf8f8820515ea0a1ab1a47decaf5",
+  "candidate_manifest_sha256": "5bea29665d0cef652f58a52ba8a1d504f5785cffb9c36638d600614b080a4c3c"
+}

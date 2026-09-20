@@ -1,0 +1,31 @@
+{
+  "iterations": 100,
+  "relative_max_shift": 0.0015068800983778054,
+  "empty_clusters": 0,
+  "seed": 29,
+  "fit_objects": 32768,
+  "fit_seconds": 23.68121976288967,
+  "cluster_counts": [
+    11705,
+    6491,
+    9912,
+    591,
+    4773,
+    5251,
+    5767,
+    3647,
+    2938,
+    8262,
+    758,
+    5724,
+    10336,
+    6975,
+    11480,
+    5390
+  ],
+  "artifacts": {
+    "centers.fbin": "1c2279c17b9810cc900c5781909ee4776109bb018a2cb9598896703a7a27a400",
+    "labels.u32": "6cbe8b46ab79912a3ae309a8e83705a52d1520de743b9737d51392deb9e1ea8b",
+    "global_reference.npz": "a2f1136bf3ac3de479529b73de565df273912f68c38ff42fa45be3667cb22c71"
+  }
+}

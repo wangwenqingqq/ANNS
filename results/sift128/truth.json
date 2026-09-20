@@ -1,0 +1,21 @@
+{
+  "stage": "truth_verified",
+  "metric": "squared_l2",
+  "arithmetic": "FP64_direct_difference_squared_sum",
+  "independent_check": "scalar_python_math_fsum_3_by_127",
+  "independent_max_abs_error": 0.0,
+  "query_block": 8,
+  "database_block": 4096,
+  "base_n": 100000,
+  "query_n": 1000,
+  "dimension": 128,
+  "boundary_tie_queries": 6,
+  "top10_cut_tie_queries": 2,
+  "elapsed_seconds": 38.2716093219351,
+  "maxrss_native_units": 917064,
+  "input_manifest_sha256": "dcc7e55448816cca23b9320a0f0cab940d729e9e3146acffeaf897dab8096ccb",
+  "artifacts": {
+    "all_d2.npy": "eaf71fe89a17e84d1d71aa9a0120397f5818d6d19e869e70a8062ddf770f2176",
+    "top100.npz": "dc79c2f73f5789311e4dda9aa1847cae4cc594f527d67bd8a1d704eeff0ff3c0"
+  }
+}
