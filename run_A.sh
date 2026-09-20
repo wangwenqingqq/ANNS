@@ -35,5 +35,5 @@ for dataset in sift128 gist960; do
   done
   python3 verify_results.py --data "$data"
 done
-python3 curate_results.py
+python3 curate_results.py --out runs/curated_results
 # This runner deliberately never launches B, even if a future A result is positive.

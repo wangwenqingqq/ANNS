@@ -63,7 +63,8 @@ is **not** deployable nearest-neighbor search time, nor measured GPU traffic.
 
 After setting all four input-path environment variables above (and GIST
 equivalents), `./run_A.sh` executes both datasets, all seeds/ranks, calibration,
-freeze, test, independent verification and curation. It refuses to overwrite
+freeze, test, independent verification and curation into `runs/curated_results`
+(the shipped `results/` evidence remains untouched). It refuses to overwrite
 existing evidence and never launches B. Full raw matrices and model/pair files
 stay outside Git; their hashes are retained. Compressed per-query CSVs include
 all train/calibration/test rows, not a selected favorable subset.
