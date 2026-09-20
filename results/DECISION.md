@@ -19,7 +19,7 @@ All main/reference probe test rows have zero added false prunes. H and the froze
 
 ## Four separate questions
 
-1. **Reusable structure outside training?** Energy capture can generalize, but the experiment does not establish a useful hard-conditioning-specific advantage. This is not a claim that residuals have no structure.
+1. **Reusable structure outside training?** A useful H-specific advantage is not established. H energy capture drops from about 0.567 on train to 0.407 on test for SIFT, and from 0.346–0.358 to 0.092–0.094 for GIST; test capture is below both L and Q. This is consistent with substantial overfitting under the frozen training budget, not proof that residuals have no structure.
 2. **Less information/work for the decision?** Not relative to the strongest ordinary control: H needs more hard-negative full refinements in every seed. It misses the required 20% reduction, with paired intervals entirely below zero.
 3. **Better than ordinary/mature methods at the same budget?** No. L is stronger for the main criterion, and eligible RQ+ points often require far fewer refinements. Preserve the RQ+ quality failures and the separate allocator caveat.
 4. **Full-query benefit?** Unknown, not measured. Stage B was correctly not started. No oracle-radius timing, CPU export duration or logical-byte proxy is a deployable GPU kNN speedup.
